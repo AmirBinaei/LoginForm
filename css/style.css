@@ -1,0 +1,137 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+    font-family: kara;
+}
+body{
+    direction: rtl;
+}
+
+@font-face {
+    font-family: kara;
+    src: url(../fontKara/SGKara-Regular.ttf);
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url(../image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 380px;
+    height: 480px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.title{
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    overflow: hidden;
+    margin-top: 8%;
+}
+.btnToggle{
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    padding: 5px 0;
+    cursor: pointer;
+    z-index: 10;
+}
+.bgtitle{
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 50%;
+    background-color: orange;
+    border-radius: 30px;
+    transition: all .5s;
+}
+
+.socioalBrand{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10% 0;
+}
+.socioalBrand img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 20px 9px #ff61241f;
+}
+.boxInput{
+    display: flex;
+    width: 760px;
+    justify-content: space-evenly;
+    transform: translateX(-180px);
+    transition: all .5s;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+form input{
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 3px 0;
+    margin: 10px 0;
+    outline: none;
+}
+.checkbox{
+    width: 100%;
+    text-align: start;
+    padding-right: 5px;
+}
+.checkbox input{
+    width: auto;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.checkbox span{
+    color: rgba(0, 0, 0, 0.6);
+}
+.sub{
+    width: 81px;
+    border: 1px solid transparent;
+    background-color: orange;
+    padding: 5px 0;
+    border-radius: 30px;
+    margin-top: 10%;
+    cursor: pointer;
+    transition: all .3s;
+}
+.sub:hover{
+    background-color: transparent;
+    border: 1px solid orange;
+}
+
+.translateInput{
+    transform: translateX(180px) !important;
+}
+.translateBg{
+    transform: translateX(100%) !important;
+}
+
